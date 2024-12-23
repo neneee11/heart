@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm Message</title>
+    <style>
+        body {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: #fdf5e6;
+            background: -webkit-linear-gradient(315deg, #fdf5e6, #ffe4e1);
+            background: linear-gradient(135deg, #fdf5e6, #ffe4e1);
+            font-family: 'Kanit', 'Sarabun', sans-serif;
+        }
+        .heart {
+            width: 200px;
+            height: 200px;
+            -webkit-animation: pulse 1.5s infinite;
+            animation: pulse 1.5s infinite;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff6b6b;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            padding: 0 20px;
+        }
+        @-webkit-keyframes pulse {
+            0% { -webkit-transform: scale(1); transform: scale(1); }
+            50% { -webkit-transform: scale(1.1); transform: scale(1.1); }
+            100% { -webkit-transform: scale(1); transform: scale(1); }
+        }
+        @keyframes pulse {
+            0% { -webkit-transform: scale(1); transform: scale(1); }
+            50% { -webkit-transform: scale(1.1); transform: scale(1.1); }
+            100% { -webkit-transform: scale(1); transform: scale(1); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg class="heart" viewBox="0 0 32 32">
+        <path fill="#ff6b6b" 
+              d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+              C30,20.335,16,28.261,16,28.261z">
+        </path>
+    </svg>
+    <div class="message">ถ้าตื่นเเล้ว อย่าลืมทานข้าวนะคะ</div>
+</body>
+</html>
